@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/styleHome.css" />
+    <link rel="stylesheet" href="bootstrap/all.min.css" />
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+
+    <title>Swimming Pool</title>
+  </head>
+  <body>
+    <nav class="navbar text-white bg-dark navbar-expand-lg bg-nav1">
+      <div class="container-fluid text-white">
+        <a class="navbar-brand text-white" href="#">Swimming Pool Service</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active text-white" aria-current="page" href="#"
+              >Home</a
+            >
+            <a class="nav-link text-white" href="#">Features</a>
+            <a class="nav-link text-white" href="#">Pricing</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End nav -->
+    <!-- start Carousel -->
+    <div
+      id="carouselExampleInterval"
+      class="carousel slide mb-5"
+      data-bs-ride="carousel"
+      castom-img
+    >
+      <div class="carousel-inner castom-img">
+        <div class="carousel-item active img-1" data-bs-interval="10000">
+          <img src="Img/1.jpg" class="d-block w-100 h-25" alt="..." />
+        </div>
+        <div class="carousel-item active img-1" data-bs-interval="10000">
+          <img src="Img/2.jpg" class="d-block w-100 h-25" alt="..." />
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="Img/3.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="Img/4.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- end Carousel -->
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
