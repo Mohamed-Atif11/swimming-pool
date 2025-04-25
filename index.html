@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/styleHome.css" />
+    <link rel="stylesheet" href="style/waves.css" />
     <link rel="stylesheet" href="bootstrap/all.min.css" />
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
 
@@ -27,10 +28,25 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-link active text-white" aria-current="page" href="#"
-              >Home</a
+              >About us</a
             >
-            <a class="nav-link text-white" href="#">Features</a>
-            <a class="nav-link text-white" href="#">Pricing</a>
+            <a class="nav-link text-white" href="Product.html">Product</a>
+            <li class="nav-item dropdown">
+              <button
+                class="btn text-white dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Department
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">الصيانة</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
           </div>
         </div>
       </div>
@@ -39,18 +55,18 @@
     <!-- start Carousel -->
     <div
       id="carouselExampleInterval"
-      class="carousel slide mb-5"
+      class="carousel slide mb-3"
       data-bs-ride="carousel"
       castom-img
     >
       <div class="carousel-inner castom-img">
-        <div class="carousel-item active img-1" data-bs-interval="10000">
+        <div class="carousel-item active img-1" data-bs-interval="5000">
           <img src="Img/1.jpg" class="d-block w-100 h-25" alt="..." />
         </div>
-        <div class="carousel-item active img-1" data-bs-interval="10000">
+        <div class="carousel-item active img-1" data-bs-interval="5000">
           <img src="Img/2.jpg" class="d-block w-100 h-25" alt="..." />
         </div>
-        <div class="carousel-item" data-bs-interval="2000">
+        <div class="carousel-item" data-bs-interval="5000">
           <img src="Img/3.jpg" class="d-block w-100" alt="..." />
         </div>
         <div class="carousel-item">
@@ -77,7 +93,212 @@
       </button>
     </div>
     <!-- end Carousel -->
-    <script src="js/main.js"></script>
+    <!-- start about us  -->
+    <div class="d-flex justify-content-center fw-semibold mb-3 fs-3">
+      <div class="d-flex justify-content-center about w-75">About Us</div>
+    </div>
+    <div class="container bgcolor mb-3">
+      <!-- card-1 -->
+      <div class="container" id="mode">
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col mb-5">
+            <div class="card mt-3">
+              <img
+                src="Img/5.jpg"
+                class="card-img-top"
+                alt="..."
+                height="500px"
+              />
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="col">
+            <div class="card mt-5 border-0 mb-4" style="direction: rtl">
+              <div class="card-body">
+                <div class="fs-5">
+                  نحن فريق متخصص في إدارة وتشغيل حمامات السباحة، نوفر لك تجربة
+                  متكاملة تجمع بين النظافة، الأمان، والراحة. نقدم خدمات الصيانة
+                  الدورية، وإدارة المشتريات الخاصة بكل ما يحتاجه حمام السباحة،
+                  إلى جانب مجموعة من الخدمات المميزة اللي بتضمن لك أفضل تجربة
+                  ممكنة. هدفنا إننا نوفر بيئة مثالية للاستمتاع بالمياه في أجواء
+                  صحية وآمنة، سواء في المنازل أو المنشآت نحرص على أدق التفاصيل
+                  لضمان أن يظل حمام السباحة في أفضل حالة دائمًا".
+                  <div>
+                    <ul class="mt-2 me-5">
+                      <li>خدمات صيانة دورية باستخدام أحدث المعدات.</li>
+                      <li>توفير مستلزمات حمام السباحة بجودة عالية.</li>
+                      <li>إشراف متخصص يضمن أعلى معايير السلامة.</li>
+                      <li>تقديم حلول مخصصة تناسب احتياجاتك.</li>
+                      <li>متابعة مستمرة للحفاظ على نظافة المياه وجودتها.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end about  -->
+    <!-- info -->
+    <div class="container mt-4 text-center border-0">
+      <div class="card-body d-flex justify-content-center">
+        <h5 class="card-title fs-3">
+          We <span class="text-danger">Provide</span> the best
+          <span class="text-primary-emphasis">services</span> for serve you
+        </h5>
+      </div>
+    </div>
+    <!-- card-1 -->
+    <div class="container mb-5" id="mode">
+      <div class="row row-cols-1 row-cols-md-3 g-4 mt-1">
+        <div class="col">
+          <div class="card card-1 h-100 mb-3">
+            <img src="Img/service.jpg" class="card-img-top img-1" alt="..." />
+            <h5 class="card-title text-center mt-2 mb-2">
+              Service <i class="fa-solid fa-screwdriver-wrench"></i>
+            </h5>
+            <div class="star d-flex justify-content-center">
+              <a href="Img/service.jpg" download class="card-link">
+                <button type="button" class="btn btn-outline-primary">
+                  <i class="fa-solid fa-cloud-arrow-down"></i> Download
+                </button></a
+              >
+              <a
+                href="https://wa.me/+201022111175?text=Swimming%20Pool%20Service%20%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D8%A8%D9%83%D8%8C%20%D8%B4%D9%83%D8%B1%D8%A7%20%D9%84%D9%83%20%D8%B9%D9%84%D9%89%20%D8%AA%D9%88%D8%A7%D8%B5%D9%84%D9%83%20%D9%85%D8%B9%0A%D9%85%D9%86%20%D9%81%D8%B6%D9%84%D9%83%20%D8%A3%D8%AE%D8%A8%D8%B1%D9%86%D8%A7%20%D9%83%D9%8A%D9%81%20%D9%8A%D9%85%D9%83%D9%86%D9%86%D8%A7%20%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%D8%AA%D9%83%D8%9F
+                "
+                target="_blank"
+                ><button
+                  class="btn btn-outline-primary ms-3"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#staticBackdrop"
+                  aria-controls="staticBackdrop"
+                >
+                  <i class="fa-solid fa-phone"></i> reservation
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="col">
+          <div class="card card-1 h-100 mb-3">
+            <img src="Img/product.jpg" class="card-img-top img-1" alt="..." />
+            <h5 class="card-title text-center mt-2 mb-2">
+              Product <i class="fa-solid fa-store"></i>
+            </h5>
+            <div class="d-flex justify-content-center">
+              <a href="Img/product.jpg" download class="card-link">
+                <button type="button" class="btn btn-outline-primary">
+                  <i class="fa-solid fa-cloud-arrow-down"></i> Download
+                </button></a
+              >
+              <a href="Product.html" target="_blank"
+                ><button
+                  class="btn btn-outline-primary ms-3"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#staticBackdrop"
+                  aria-controls="staticBackdrop"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i> Shop now
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="col">
+          <div class="card card-1 h-100 mb-3">
+            <img src="Img/complaint.jpg" class="card-img-top img-1" alt="..." />
+            <h5 class="card-title text-center mt-2 mb-2">
+              Complaints and suggestions
+              <i class="fa-regular fa-file-lines"></i>
+            </h5>
+            <div class="star d-flex justify-content-center">
+              <a href="Img/complaint.jpg" download class="card-link">
+                <button type="button" class="btn btn-outline-primary">
+                  <i class="fa-solid fa-cloud-arrow-down"></i> Download
+                </button></a
+              >
+              <a
+                href="https://wa.me/+201022111175?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D9%83%D9%8A%D9%81%20%D9%8A%D9%85%D9%83%D9%86%D9%86%D9%8A%20%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%D8%AA%D9%83%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D8%B4%D9%83%D9%88%D8%AA%D9%83%D8%9F"
+                target="_blank"
+                ><button
+                  class="btn btn-outline-primary ms-3"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#staticBackdrop"
+                  aria-controls="staticBackdrop"
+                >
+                  <i class="fa-solid fa-phone"></i> Contact us
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end  -->
+    <!-- Footer -->
+    <div class="header mt-4">
+      <div class="header mt-4">
+        <div class="inner-header flex">
+          <a class="fs-1 text-white text-decoration-none" href="Product.html">
+            Go to shoping now</a
+          >
+        </div>
+        <!--Waves Container-->
+        <div>
+          <svg
+            class="waves"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28"
+            preserveAspectRatio="none"
+            shape-rendering="auto"
+          >
+            <defs>
+              <path
+                id="gentle-wave"
+                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+              />
+            </defs>
+            <g class="parallax">
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="0"
+                fill="rgba(255,255,255,0.7"
+                )
+              />
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="3"
+                fill="rgba(255,255,255,0.5)"
+              />
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="5"
+                fill="rgba(255,255,255,0.3)"
+              />
+              <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+          </svg>
+        </div>
+      </div>
+      <!--Header ends-->
+      <!--Content starts-->
+      <div class="content flex">
+        <p>Mohamed Atif©2025</p>
+      </div>
+    </div>
+
+    <!--Content ends-->
+    <script src="js/product.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
