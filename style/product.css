@@ -1,0 +1,8 @@
+.bg-body {
+  background: linear-gradient(
+    to right,
+    rgba(12, 7, 105, 0.521) 0%,
+    rgb(6 6 117 / 73%) 35%,
+    #b2ebf2 100%
+  );
+}

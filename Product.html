@@ -3,120 +3,366 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/styleHome.css">
-    <link rel="stylesheet" href="style/waves.css">
+    <link rel="stylesheet" href="style/styleHome.css" />
+    <link rel="stylesheet" href="style/product.css" />
+    <link rel="stylesheet" href="style/waves.css" />
     <link rel="stylesheet" href="bootstrap/all.min.css" />
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
     <title>Product</title>
   </head>
-  <body>
+  <body class="bg-body">
     <nav class="navbar text-white bg-dark navbar-expand-lg bg-nav1">
-        <div class="container-fluid text-white">
-          <a class="navbar-brand text-white" href="#">Swimming Pool Service</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link text-white" href="index.html">Home</a>
-              <li class="nav-item dropdown">
+      <div class="container-fluid text-white">
+        <a class="navbar-brand text-warning fw-bold " href="#">Swimming Pool Service</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link text-white fw-bold" href="index.html">Home <i class="fa-solid fa-house text-warning"></i></a>
+            <a class="nav-link text-white fw-bold " href="Product.html">Product  <i class="fa-solid fa-cart-shopping text-warning"></i
+              ></a>
+          </div>
+          <div class="btn-group ">
+            <button class="btn btn-secondary dropdown-toggle bg-transparent border-0 fw-bold" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Change Mode <i class="fa-solid fa-sun text-warning"></i>
+            </button>
+            <ul class="dropdown-menu bg-transparent ">
+              <li><a class="dropdown-item" href="#"> 
                 <button
-                  class="btn text-white dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
+               type="button"
+               class="btn btn-dark "
+               id="Dark-Mode"
+             >
+             <i class="fa-solid fa-lightbulb"></i> Dark Mode
+             </button></a></li>
+
+              <li><a class="dropdown-item" href="#"> 
+                 <button
+                type="button"
+                class="btn btn-dark "
+                id="light-Mode"
+              >
+              <i class="fa-regular fa-lightbulb"></i> light Mode
+              </button></a></li>
+            </ul>
+          </div>
+          
+    </nav>
+    <!-- End nav -->
+    <!-- info -->
+    <div class="container  mt-4 text-center border-0 text-white">
+      <div class="card-body d-flex justify-content-center">
+        <h5 class="card-title fs-2 text-warning fw-bold" >Our products <i class="fa-solid fa-cart-arrow-down"></i>
+        </h5>
+
+      </div>
+    </div>
+    <!-- card-1 -->
+    <div class="container container-1" id="mode">
+      <div class="row row-cols-1 row-cols-md-3 g-4 mt-1">
+        <div class="col">
+          <div class="card mood h-100">
+            <img src="Img/ستارة.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title text-center" id="product-name">
+                ستارة مياة
+              </h5>
+              <div class="mt-3 text-center">
+                <a href="Img/ستارة.jpg" download>
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary ms-3 mt-2"
+                  >
+                    <i class="fa-solid fa-cloud-arrow-down"></i> Download
+                  </button></a
                 >
-                  Department
+                <button
+                  class="btn btn-outline-success whatsapp-btn ms-3 mt-2"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#staticBackdrop"
+                  aria-controls="staticBackdrop"
+                >
+                  <i class="fa-brands fa-whatsapp"></i> Get it now
                 </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">الصيانة</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
+              </div>
+            </div>
+            <div class="d-flex flex-row mb-3 justify-content-center">
+              <div class="price me-4">250 EGP</div>
+              <div class="price text-decoration-line-through">300 EGP</div>
+            </div>
+            <div class="card-footer text-center">
+              <small class="mood">Last updated 4 mins ago</small>
             </div>
           </div>
         </div>
-      </nav>
-      <!-- End nav -->
-    <!--  -->
-    <div class="d-flex justify-content-center mt-5">
-      <div>
-        <a href="index.html"> <button type="button" class="btn btn-primary"> <i class="fa-solid fa-circle-arrow-left"></i>  الرجوع للصفحة الرئيسة
-        </button></a>
-        
-        </button>
+        <!-- card 2 -->
+        <div class="col">
+          <div class="card mood h-100">
+            <img src="Img/ذراع.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title text-center">نافورة</h5>
+              <div class="mt-3 text-center">
+                <a href="Img/ذراع.jpg" download class="card-link">
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary ms-3 mt-2"
+                  >
+                    <i class="fa-solid fa-cloud-arrow-down"></i> Download
+                  </button></a
+                >
+
+                <button
+                  class="btn btn-outline-success whatsapp-btn ms-3 mt-2"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#staticBackdrop"
+                  aria-controls="staticBackdrop"
+                >
+                  <i class="fa-brands fa-whatsapp"></i> Get it now
+                </button>
+              </div>
+            </div>
+            <div class="d-flex flex-row mb-3 justify-content-center">
+              <div class="price me-4">250 EGP</div>
+              <div class="price text-decoration-line-through">300 EGP</div>
+            </div>
+            <div class="card-footer text-center">
+              <small class="mood">Last updated 4 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="col">
+          <div class="card mood h-100">
+            <img src="Img/حبل.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title text-center">حبل حارات</h5>
+              <div class="mt-3 text-center">
+                <a href="Img/spot2.jpg" download class="card-link">
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary ms-3 mt-2"
+                  >
+                    <i class="fa-solid fa-cloud-arrow-down"></i> Download
+                  </button></a
+                >
+                <button
+                  class="btn btn-outline-success whatsapp-btn ms-3 mt-2"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#staticBackdrop"
+                  aria-controls="staticBackdrop"
+                >
+                  <i class="fa-brands fa-whatsapp"></i> Get it now
+                </button>
+              </div>
+            </div>
+            <div class="d-flex flex-row mb-3 justify-content-center">
+              <div class="price me-4">250 EGP</div>
+              <div class="price text-decoration-line-through">300 EGP</div>
+            </div>
+            <div class="card-footer text-center">
+              <small class="mood">Last updated 4 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="col">
+          <div class="card mood h-100">
+            <img src="Img/product4.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title text-center">حبل حارات</h5>
+              <div class="mt-3 text-center">
+                <a href="Img/product4.jpg" download class="card-link">
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary ms-3 mt-2"
+                  >
+                    <i class="fa-solid fa-cloud-arrow-down"></i> Download
+                  </button></a
+                >
+                <button
+                  class="btn btn-outline-success whatsapp-btn ms-3 mt-2"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#staticBackdrop"
+                  aria-controls="staticBackdrop"
+                >
+                  <i class="fa-brands fa-whatsapp"></i> Get it now
+                </button>
+              </div>
+            </div>
+            <div class="d-flex flex-row mb-3 justify-content-center">
+              <div class="price me-4">250 EGP</div>
+              <div class="price text-decoration-line-through">300 EGP</div>
+            </div>
+            <div class="card-footer text-center">
+              <small class="mood">Last updated 4 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="col">
+          <div class="card mood h-100">
+            <img src="Img/product5.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title text-center">كلور اقراص</h5>
+              <div class="mt-3 text-center">
+                <a href="Img/product5.jpg" download class="card-link">
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary ms-3 mt-2"
+                  >
+                    <i class="fa-solid fa-cloud-arrow-down"></i> Download
+                  </button></a
+                >
+                <button
+                  class="btn btn-outline-success whatsapp-btn ms-3 mt-2"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#staticBackdrop"
+                  aria-controls="staticBackdrop"
+                >
+                  <i class="fa-brands fa-whatsapp"></i> Get it now
+                </button>
+              </div>
+            </div>
+            <div class="d-flex flex-row mb-3 justify-content-center">
+              <div class="price me-4">250 EGP</div>
+              <div class="price text-decoration-line-through">300 EGP</div>
+            </div>
+            <div class="card-footer text-center">
+              <small class="mood">Last updated 4 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class="col">
+          <div class="card mood h-100">
+            <img src="Img/product6.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title text-center">حبل حارات</h5>
+              <div class="mt-3 text-center">
+                <a href="Img/product6.jpg" download class="card-link">
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary ms-3 mt-2"
+                  >
+                    <i class="fa-solid fa-cloud-arrow-down"></i> Download
+                  </button></a
+                >
+                <button
+                  class="btn btn-outline-success whatsapp-btn ms-3 mt-2"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#staticBackdrop"
+                  aria-controls="staticBackdrop"
+                >
+                  <i class="fa-brands fa-whatsapp"></i> Get it now
+                </button>
+              </div>
+            </div>
+            <div class="d-flex flex-row mb-3 justify-content-center">
+              <div class="price me-4">250 EGP</div>
+              <div class="price text-decoration-line-through">300 EGP</div>
+            </div>
+            <div class="card-footer text-center">
+              <small class="mood">Last updated 4 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="header mt-4">
+      <div class="header mt-4">
+        <div class="inner-header flex justify-content-center">
+          <a
+            class="fs-5 text-white text-decoration-none me-3 mt-3"
+            href="https://www.facebook.com/hazem.zoma.71697092?locale=ar_AR"
+            target="_blank"
+          >
+            <p>Swimming Service Pool</p></a
+          >
+          <i class="fa-brands fa-facebook fs-5"></i>
+        </div>
+        <!--Waves Container-->
+        <div>
+          <svg
+            class="waves"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28"
+            preserveAspectRatio="none"
+            shape-rendering="auto"
+          >
+            <defs>
+              <path
+                id="gentle-wave"
+                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+              />
+            </defs>
+            <g class="parallax">
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="0"
+                fill="rgba(255,255,255,0.7"
+                )
+              />
+
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="3"
+                fill="rgba(255,255,255,0.5)"
+              />
+
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="5"
+                fill="rgba(255,255,255,0.3)"
+              />
+              <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+          </svg>
+        </div>
+      </div>
+      <!--Header ends-->
+      <!--Content starts-->
+      <div class="content d-flex justify-content-center">
+        <div class="content d-flex justify-content-center">
+          <a
+            class="fs-5 text-decoration-none me-3 mt-3"
+            href="https://www.facebook.com/Mo.Atif22/?locale=ar_AR"
+            target="_blank"
+          >
+            <p class="text-black">Mohamed Atif©2025</p></a
+          >
+          <a
+            class="fs-3 text-decoration-none text-black mt-2"
+            href="https://github.com/Mohamed-Atif11"
+            title="github"
+            target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
       </div>
     </div>
 
-
-
-     <!-- Footer -->
-     <div class="header mt-4">
-        <div class="header mt-4">
-          <div class="inner-header flex">
-            <a class="fs-1 text-white text-decoration-none" href="#"> <i class="fa-solid fa-face-smile-wink"></i> 
-           قريبــــــــــــــاً</a
-            >
-          </div>
-          <!--Waves Container-->
-          <div>
-            <svg
-              class="waves"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              viewBox="0 24 150 28"
-              preserveAspectRatio="none"
-              shape-rendering="auto"
-            >
-              <defs>
-                <path
-                  id="gentle-wave"
-                  d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
-                />
-              </defs>
-              <g class="parallax">
-                <use
-                  xlink:href="#gentle-wave"
-                  x="48"
-                  y="0"
-                  fill="rgba(255,255,255,0.7"
-                  )
-                />
-                <use
-                  xlink:href="#gentle-wave"
-                  x="48"
-                  y="3"
-                  fill="rgba(255,255,255,0.5)"
-                />
-                <use
-                  xlink:href="#gentle-wave"
-                  x="48"
-                  y="5"
-                  fill="rgba(255,255,255,0.3)"
-                />
-                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-              </g>
-            </svg>
-          </div>
-        </div>
-        <!--Header ends-->
-        <!--Content starts-->
-        <div class="content flex">
-          <p>Mohamed Atif©2025</p>
-        </div>
-      </div>
-  
-      <!--Content ends-->
+    <!--Content ends-->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/product.js"></script>
   </body>

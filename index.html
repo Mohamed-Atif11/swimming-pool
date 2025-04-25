@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="style/waves.css" />
     <link rel="stylesheet" href="bootstrap/all.min.css" />
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <title>Swimming Pool</title>
   </head>
   <body>
     <nav class="navbar text-white bg-dark navbar-expand-lg bg-nav1">
       <div class="container-fluid text-white">
-        <a class="navbar-brand text-white" href="#">Swimming Pool Service</a>
+        <a class="navbar-brand text-warning" href="#">Swimming Pool Service</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -28,30 +29,50 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-link active text-white" aria-current="page" href="#"
-              >About us</a
-            >
-            <a class="nav-link text-white" href="Product.html">Product</a>
+              >Home <i class="fa-solid fa-house text-warning"></i
+            ></a>
             <li class="nav-item dropdown">
               <button
                 class="btn text-white dropdown-toggle"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Department
+                Department <i class="fa-solid fa-layer-group text-warning"></i>
               </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">الصيانة</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+              <ul class="dropdown-menu border-0">
                 <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a
+                    class="dropdown-item text-black fw-bold"
+                    href="Product.html"
+                    >Product
+                    <i class="fa-solid fa-cart-shopping text-success"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item fw-bold" href="#"
+                    >Price Table
+                    <i class="fa-solid fa-hand-holding-dollar text-success"></i
+                  ></a>
                 </li>
               </ul>
             </li>
           </div>
         </div>
+        <!--  -->
+        <button id="showAlert" class="btn btn-light bg-transparent">
+          Enjoy <i class="fa-solid fa-music"></i>
+        </button>
+        <audio
+          id="bgMusic"
+          src="audio/Nostalgia - (Soft Piano & Violin).mp3"
+          loop
+        ></audio>
+
+        <!--  -->
       </div>
     </nav>
     <!-- End nav -->
+
     <!-- start Carousel -->
     <div
       id="carouselExampleInterval"
@@ -97,49 +118,33 @@
     <div class="d-flex justify-content-center fw-semibold mb-3 fs-3">
       <div class="d-flex justify-content-center about w-75">About Us</div>
     </div>
-    <div class="container bgcolor mb-3">
-      <!-- card-1 -->
-      <div class="container" id="mode">
-        <div class="row row-cols-1 row-cols-md-2">
-          <div class="col mb-5">
-            <div class="card mt-3">
-              <img
-                src="Img/5.jpg"
-                class="card-img-top"
-                alt="..."
-                height="500px"
-              />
-            </div>
-          </div>
-          <!-- card 2 -->
-          <div class="col">
-            <div class="card mt-5 border-0 mb-4" style="direction: rtl">
-              <div class="card-body">
-                <div class="fs-5">
-                  نحن فريق متخصص في إدارة وتشغيل حمامات السباحة، نوفر لك تجربة
-                  متكاملة تجمع بين النظافة، الأمان، والراحة. نقدم خدمات الصيانة
-                  الدورية، وإدارة المشتريات الخاصة بكل ما يحتاجه حمام السباحة،
-                  إلى جانب مجموعة من الخدمات المميزة اللي بتضمن لك أفضل تجربة
-                  ممكنة. هدفنا إننا نوفر بيئة مثالية للاستمتاع بالمياه في أجواء
-                  صحية وآمنة، سواء في المنازل أو المنشآت نحرص على أدق التفاصيل
-                  لضمان أن يظل حمام السباحة في أفضل حالة دائمًا".
-                  <div>
-                    <ul class="mt-2 me-5">
-                      <li>خدمات صيانة دورية باستخدام أحدث المعدات.</li>
-                      <li>توفير مستلزمات حمام السباحة بجودة عالية.</li>
-                      <li>إشراف متخصص يضمن أعلى معايير السلامة.</li>
-                      <li>تقديم حلول مخصصة تناسب احتياجاتك.</li>
-                      <li>متابعة مستمرة للحفاظ على نظافة المياه وجودتها.</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <!--  -->
+    <div class="row g-0 position-relative h-50">
+      <div class="col-md-6 mb-md-0 p-md-4">
+        <img src="Img/5.jpg" class="w-100" alt="..." />
+      </div>
+      <div class="col-md-6 p-4 ps-md-0 mt-5 fs-5" style="direction: rtl">
+        <p>
+          نحن فريق متخصص في إدارة وتشغيل حمامات السباحة، نوفر لك تجربة متكاملة
+          تجمع بين النظافة، الأمان، والراحة. نقدم خدمات الصيانة الدورية، وإدارة
+          المشتريات الخاصة بكل ما يحتاجه حمام السباحة، إلى جانب مجموعة من
+          الخدمات المميزة اللي بتضمن لك أفضل تجربة ممكنة. هدفنا إننا نوفر بيئة
+          مثالية للاستمتاع بالمياه في أجواء صحية وآمنة، سواء في المنازل أو
+          المنشآت نحرص على أدق التفاصيل لضمان أن يظل حمام السباحة في أفضل حالة
+          دائمًا".
+        </p>
+        <div>
+          <ul class="mt-2 me-5">
+            <li>خدمات صيانة دورية باستخدام أحدث المعدات.</li>
+            <li>توفير مستلزمات حمام السباحة بجودة عالية.</li>
+            <li>إشراف متخصص يضمن أعلى معايير السلامة.</li>
+            <li>تقديم حلول مخصصة تناسب احتياجاتك.</li>
+            <li>متابعة مستمرة للحفاظ على نظافة المياه وجودتها.</li>
+          </ul>
         </div>
       </div>
     </div>
-    <!-- end about  -->
+
     <!-- info -->
     <div class="container mt-4 text-center border-0">
       <div class="card-body d-flex justify-content-center">
@@ -293,12 +298,20 @@
       <!--Header ends-->
       <!--Content starts-->
       <div class="content flex">
-        <p>Mohamed Atif©2025</p>
+        <p class="mt-4">Mohamed Atif©2025</p>
+        <a
+          class="fs-3 text-decoration-none text-black mt-2"
+          href="https://github.com/Mohamed-Atif11"
+          title="github"
+          target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
       </div>
     </div>
 
     <!--Content ends-->
     <script src="js/product.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
