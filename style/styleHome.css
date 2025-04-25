@@ -31,3 +31,15 @@
 /* ul li {
   list-style-type: "✓ ";
 } */
+/* .card-1 {
+  background: linear-gradient(
+    to right,
+    rgba(141, 211, 234, 0.822) 0%,
+    rgba(53, 126, 215, 0.122) 35%,
+    rgba(0, 213, 255, 0.492) 100%
+  );
+} */
+
+.info {
+  background-color: ghostwhite;
+}
